@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    h2 {
+      color: brown;
+      border-bottom: 2px solid #b46;
+      padding-bottom: 5px;
+    }
+    .btn {
+      margin: 5px;
+      padding: 8px 12px;
+      font-size: 16px;
+    }
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+    <script>
+        function tong(){
+            so1=parseFloat(document.getElementById('so1').value);
+            so2=parseFloat(document.getElementById('so2').value);
+            tong=so1+so2;
+            document.getElementById('result').innerHTML="Result Addition: " + tong;
+        }
+        function tru(){
+            so1=parseFloat(document.getElementById('so1').value);
+            so2=parseFloat(document.getElementById('so2').value);
+            tru=so1 - so2;
+            document.getElementById('result').innerHTML="Result Subtraction: " + tru;
+        }
+        function nhan(){
+            so1=parseFloat(document.getElementById('so1').value);
+            so2=parseFloat(document.getElementById('so2').value);
+            nhan=so1*so2;
+            document.getElementById('result').innerHTML="Result Multiplication: " + nhan;
+        }
+        function chia(){
+            so1=parseFloat(document.getElementById('so1').value);
+            so2=parseFloat(document.getElementById('so2').value);
+            chia=so1/so2;
+            document.getElementById('result').innerHTML="Result Division: " + chia;
+        }
+    </script>
+    <h2>Calculator</h2>
+    <p><input type="text" id="so1" value="">
+        <input type="text" id="so2" value="">
+    </p>
+    <p>
+        <button onclick="tong()">Addition(+)</button>
+        <button onclick="tru()">Subtraction(-)</button>
+        <button onclick="nhan()">Multiplication(X)</button>
+        <button onclick="chia()">Division(/)</button>
+    </p>
+    <p id="result"></p>
+</body>
+</html>

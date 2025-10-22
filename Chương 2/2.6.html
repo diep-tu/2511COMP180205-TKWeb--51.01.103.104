@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            margin: 0px;
+            display: grid;
+            grid-template-rows: 10 10 10px;
+            width: 1400px;
+        }
+        .container1{
+            border: 1px solid greenyellow;
+            width: 1400px;
+            height: 60px;
+            background-color: greenyellow;
+        }
+        .container1 img{
+            float: right;
+        }
+        .container2{
+            border: 1px solid black;
+            width: 1400px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        .container2 li{
+            list-style-type: none;
+            float: left;
+            padding: 0 7px ;
+        }
+        .language{
+            right: 0px;
+            margin: 10px;
+            position: absolute;
+        }
+        .container3{
+            display: flex;
+            flex-direction: row;
+            width: 1400px;
+
+        }
+        .box3{
+            border: solid 1px skyblue;
+            width: 300px;
+            height: 500px;
+            background-color: skyblue;
+        }
+        .box4{
+            width: 1100px;
+            height: 500px;
+            border: 1px solid black;
+        }
+        .box4 >.tieude{
+            height: 30px;
+            border: 1px solid salmon;
+            color: white;
+            background-color: salmon;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .box4 > .chitiet{
+            height: 470px;
+            background: rgb(191, 61, 61);
+            padding: 10px;
+            font-size: 20px;
+            color: aliceblue;
+        }
+        footer{
+            width: 100%;
+            height: 54px;
+            background: purple;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: aliceblue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <header>
+    <div class="container1">
+        <img src="C:\Users\HUAWEI\Pictures\facebook.png">
+        <img src="C:\Users\HUAWEI\Pictures\google_plus.png">
+        <img src="C:\Users\HUAWEI\Pictures\youtube.png">
+        <img src="C:\Users\HUAWEI\Pictures\yahoo.png">
+    </div>
+    </header>
+    <div class="container2">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Product</li>
+            <li>FAQs</li>
+        </ul>
+        <div class="language">
+            <img src="C:\Users\HUAWEI\Pictures\vn.gif" >
+            <img src="C:\Users\HUAWEI\Pictures\en.gif" >
+        </div>
+    </div>
+        <div class="container3">
+            <div class="box3"></div>
+            <div class="box4">
+                <div class="tieude">Tiêu đề</div>
+                <div class="chitiet">Chi tiết</div>
+            </div>
+        </div>
+    <footer><div class="cointainer4">&copy;Bản quyền thuộc về NDT</div></footer>
+</div>
+</body>
+</html>
